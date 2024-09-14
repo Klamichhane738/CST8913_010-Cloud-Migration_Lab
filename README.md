@@ -1,6 +1,6 @@
 
 # Cloud Migration Plan: Manchester Metropolitan University Case Study
-
+Manchester Metropolitan University’s primary motivations for migrating to the cloud comprise of following areas:
 - **End of Support for VMware On-Premises Infrastructure**: As explained in the case study, the university's current on-premises infrastructure was getting old, and support for important services was about to end.
 - **Cost Benefits and Licensing**: The university used its existing Microsoft licenses, making Azure VMware Solution a more affordable choice compared to spending money on upgrading its current infrastructure.
 - **Reduction in Physical Datacenter**: The case study points out that one of Manchester data centers is set to be demolished, and the university had to quickly downsize its physical infrastructure. To make it happen, they reduced the number of comms racks from 25 to 7.
