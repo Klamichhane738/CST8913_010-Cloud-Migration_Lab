@@ -10,7 +10,7 @@ Based on the scenario described in lab instruction, the application consists of 
 
 <img src="https://github.com/user-attachments/assets/ac520979-ca4f-4a3d-9662-8d0dc810027f" alt="Final" width="800" />
 
-WebServerVM: Containerized Node.js application.
+WebServerVM: Virtual machine containing light weighted Node.js application.
 
 Docker Container: Shows the containerized web application.
 
@@ -40,3 +40,21 @@ Replica sets are used by Azure Kubernetes Service (AKS) to maintain a constant n
 
 ### Migration Procedures
 
+**1.** **Containerization of the Web Application:**
+- We begin by installing Docker on the WebServerVM using the appropriate commmand.
+- To specify the environment, we need to create a Dockerfile in the Node.js application's root directory that includes all dependencies and necessary configurations.
+- And then build the Docker image and push it to Azure Container Registry (ACR).
+
+**2. Migration of the Database to a Managed SQL Service**
+- Make sure the current SQL Server database on SQLVM is completely backed up.
+- To move the database to an Azure Managed SQL Database, use the native backup and restore features using the Azure Data Migration Service.
+- Use SQL Server Management Studio (SSMS) or a similar tool to export the database to a .bacpac file.
+- The.bacpac file can be imported into an Azure SQL Database using DMS. To configure the migration, simply follow the DMS setup procedure.
+
+**3: Configuration of the Kubernetes Cluster for High Availability**
+- To guarantee high availability, build a new AKS cluster with several nodes.
+- Establish Kubernetes services and deployments to oversee the Node.js application pods and make sure they are dispersed among several nodes.
+- To improve fault tolerance, use Azure Load Balancer to divide traffic equally among the pods.
+- Turn on Azure Monitor to keep an eye on the performance of your applications, and configure Horizontal Pod Autoscaler to change how many pods are operating in response to traffic.
+
+We can effectively move your application to a highly available and scalable architecture on Azure by adhering to these specific instructions.
