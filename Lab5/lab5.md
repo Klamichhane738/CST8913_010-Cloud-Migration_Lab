@@ -45,6 +45,7 @@ graph TD;
         I
     end
 ```
+<center>Fig: HLD of 3-tier architecture of eCommerce website migrated to cloud(AWS)</center>
 
 **Frontend Tier**: Utilizing a **AWS Elastic Load Balancer** for traffic distribution, this tier is managed by **AWS Elastic Beanstalk**, which streamlines deployment and scalability.
 
@@ -83,7 +84,48 @@ And on top of that it is possible to configure AWS CloudWatch to track RDS perfo
     Set specific goals for the move, including increased uptime, decreased latency, and improved scalability.
 3. Choose a migration plan:
     A strategy tailored for the eCommerce website to minimize changes to the application while leveraging AWS services in the cloud envrionment.
-4. 
+
+**Step 2: Step 2: Data Migration**
+
+To make the database conversion easier, make use of AWS Database conversion Service (DMS). There will be as little downtime throughout the changeover thanks to this service's provision for continuous data replication.
+
+Data Transfer:Configure and set up the target RDS instance in AWS according to the assessment. And finally, Checksums and data integrity tests should be used to validate the data after migration to make sure all records have been correctly migrated and are undamaged.
+
+**Step 3: Application Deployment**
+- After defining the environment variables (such as instance types and scaling policies) appropriate for managing eCommerce traffic, deploy the frontend application to **AWS Elastic Beanstalk.**
+- To make sure the backend API can scale in response to demand, it is recommended to set it up on Amazon EC2 instances inside an Auto Scaling Group.
+- Set up the AWS Elastic Load Balancer to evenly distribute user traffic between the frontend and backend services. 
+
+**Step 4: Testing**
+
+- Functional check: Make that all functions, including as product browsing, cart management, and checkout procedures, function properly by doing thorough functional testing.
+- To replicate heavy traffic scenarios common to eCommerce events (e.g., holiday sales), it is recommended to do load testing.
+
+**Step 5: Final data sync**
+- Use AWS DMS to do a final data sync to make sure that any modifications made during testing.
+- During the first go-live phase, use AWS CloudWatch to track application performance indicators and system health.
+
+**Rollback Strategy**
+For the rollback mechanism, following strategies are recommended:
+- First way could be enabling point-in-time recovery for the database to restore data in the event that there are problems after the migration with AWS RDS Automated Backups.
+- Amazon EC2 Snapshots: It is highly recommended to manually take VM snapshots before to migration so that, in case of need, you can restore them to earlier states.
+- AWS Systems Manager: Also it is recommened to note down and automate the steps to roll back changes so that the recovery process is easier and faster if something goes out of control.
+
+
+**Conclusion**
+
+Finally in this lab, we created a layout and mechanism that illustrated the three-tier eCommerce application's scalability, availability, and disaster recovery and how they are improved by moving it to AWS via services like Elastic Beanstalk and RDS. The thorough migration procedure, which incorporates thorough pre-migration planning and testing, assures a seamless shift while lowering risks for the entire migration process.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
