@@ -19,7 +19,7 @@ graph TD;
 graph TD;
     A[User Traffic] --> B[AWS Elastic Load Balancer]
     B --> C[AWS Elastic Beanstalk-Frontend]
-    C --> D[AWS Auto Scaling Group for Frontend]
+    C --> D[AWS Auto Scaling Group]
     
     B --> E[Backend API Service]
     E --> F[AWS Auto Scaling-for API Servers]
