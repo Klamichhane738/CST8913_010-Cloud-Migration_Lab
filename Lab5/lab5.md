@@ -18,12 +18,12 @@ graph TD;
 ```mermaid 
 graph TD;
     A[User Traffic] --> B[AWS Elastic Load Balancer]
-    B --> C[AWS Elastic Beanstalk -Frontend]
+    B --> C[AWS Elastic Beanstalk-Frontend]
     C --> D[AWS Auto Scaling Group for Frontend]
     
     B --> E[Backend API Service]
-    E --> F[AWS Auto Scaling Group for API Servers]
-    F --> G[AWS ECS Cluster -Fargate Mode]
+    E --> F[AWS Auto Scaling-for API Servers]
+    F --> G[AWS ECS Cluster-Fargate Mode]
     
     F --> H[AWS RDS- Managed SQL Database]
     H --> H2[AWS RDS Read Replicas for High Availability]
