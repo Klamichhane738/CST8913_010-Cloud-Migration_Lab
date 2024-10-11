@@ -47,6 +47,8 @@ graph TD;
 ```
 <center>Fig: HLD of 3-tier architecture of eCommerce website migrated to cloud(AWS)</center>
 
+
+
 **Frontend Tier**: Utilizing a **AWS Elastic Load Balancer** for traffic distribution, this tier is managed by **AWS Elastic Beanstalk**, which streamlines deployment and scalability.
 
 **Backend Tier:** In order to provide more flexible hosting, the server applications are being moved to Amazon EC2. **AWS ECS (Fargate Mode)** will be used to manage containerized microservices, and an auto scaling group will make sure the application can handle a range of traffic loads.
