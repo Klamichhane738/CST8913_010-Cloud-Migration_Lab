@@ -6,9 +6,9 @@ As per the instruction on lab, we are provided with an application whose fronten
 graph TD;
     A[User Traffic]
     A --> B[Load Balancer]
-    B --> C[Frontend Web Server -WebAppVM]
-    B --> D[Backend API Server -APIVM]
-    D --> E[SQL Database -DBVM]
+    B --> C[Frontend Web Server WebAppVM]
+    B --> D[Backend API Server APIVM]
+    D --> E[SQL Database DBVM]
 ```
 
 
@@ -45,9 +45,7 @@ graph TD;
         I
     end
 ```
-<center>Fig: HLD of 3-tier architecture of eCommerce website migrated to cloud(AWS)</center>
-
-
+**<center>**Fig: HLD of 3-tier architecture of eCommerce website migrated to cloud(AWS)</center>**
 
 **Frontend Tier**: Utilizing a **AWS Elastic Load Balancer** for traffic distribution, this tier is managed by **AWS Elastic Beanstalk**, which streamlines deployment and scalability.
 
