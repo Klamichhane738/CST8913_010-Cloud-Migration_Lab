@@ -25,9 +25,9 @@ graph TD;
     E --> F[AWS Auto Scaling-for API Servers]
     F --> G[AWS ECS Cluster-Fargate Mode]
     
-    F --> H[AWS RDS- Managed SQL Database]
-    H --> H2[AWS RDS Read Replicas for High Availability]
-    H --> I[AWS RDS Backup & Snapshot-Disaster Recovery]
+    F --> H[AWS RDS- Managed SQL]
+    H --> H2[AWS RDS Read Replicas]
+    H --> I[AWS RDS Backup & Snapshot]
 
     subgraph Frontend Tier
         C
