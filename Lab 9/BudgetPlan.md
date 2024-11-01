@@ -20,6 +20,10 @@ The first year involves migrating on-premises infrastructure to GCP, setting up 
 - **Redundant Storage Setup**: Multi-regional storage for disaster recovery helps avoid higher cross-continent data transfer costs, with an estimated monthly cost of **$471.04**.
 - **Cloud Monitoring**: Track only essential metrics and limit log retention to two months, estimated monthly cost for moderate usage monitoring is **$219.95**.
 
+![image](https://github.com/user-attachments/assets/1ce42001-e526-46da-9b59-66e51354fe48)
+
+Fig: This cost combines operational and management cost in GCP Price Calculator
+
 ### Total Projected Cost for Year 1
 - **Migration**: $3,719.72 (one-time)
 - **Annual Operational Costs**: $13863.42 * 12 = **$166,361.04**
