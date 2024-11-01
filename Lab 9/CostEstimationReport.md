@@ -1,4 +1,4 @@
-# Cost Estimation for GCP
+# Cost Estimation of global eCommerce company, ShopPro International using GCP Price Calculator.
 
 ## 1. Migration Cost
 
