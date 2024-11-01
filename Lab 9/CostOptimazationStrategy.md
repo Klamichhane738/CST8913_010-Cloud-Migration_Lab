@@ -34,6 +34,8 @@ These strategies align operational resources with demand and effectively control
 
 ### Recommended Strategies:
 - **Implement Redundant Storage with Regional Efficiency:** For disaster recovery, use multi-regional storage within the same continent to maintain redundancy while avoiding high cross-continent data transfer costs.
+![image](https://github.com/user-attachments/assets/08cde7e5-d1d7-4c32-be95-37f51d834b11)
+
 
 - **Use Long-Term Commitments for Essential Databases:** Applying a 3-year commitment for critical services like Cloud Spanner provides reduced rates for long-term storage and database operations.
 - **Monitor Key Metrics Selectively:** Track only essential VM and application metrics, and limit log retention to 2 months to balance insight needs with storage expenses.
