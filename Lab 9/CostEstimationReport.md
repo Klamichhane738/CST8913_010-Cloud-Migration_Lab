@@ -96,8 +96,8 @@ An estimated monthly cost breakdown for deploying five standard-tier load balanc
 ### 2.3 CDN Configuration Cost
 The Cloud CDN configuration with the total monthly cost at the end:
 
-| Category               | Region                       | Usage | Unit |
-|------------------------|------------------------------|-------|------|
+| Category               | Region                       | Usage | 
+|------------------------|------------------------------|-------|
 | Cache Data Transfer Out| Asia Pacific (including Hong Kong) | 500 GiB  |
 |                        | China                        | 500 GiB  |
 |                        | Europe                       | 500 GiB  |
@@ -116,11 +116,11 @@ For the API Back-End Services setup, where ShopPro International uses a microser
 
 We selected the operating system as Ubuntu Pro for all of the regions which is slightly higher than bring your own device strategy.
 
-| Region                | VM Configuration             | Base Quantity | Discounted Option | Monthly Base Cost | Estimated Peak Cost (with 50% Scaling) |
-|-----------------------|------------------------------|---------------|-------------------|-------------------|----------------------------------------|
-| South Carolina (East US) | General purpose, n2-standard v4 | 7 VMs        | 3-year           | $577.99           | Approx. $1,440.00                      |
-| Finland (North Europe) | General purpose, n2-standard v4 | 7 VMs        | 3-year           | $633.19           | Approx. $1,525.00                      |
-| Taiwan (East Asia)      | General purpose, n2-standard v4 | 6 VMs        | 3-year           | $556.08           | Approx. $1,470.00                      |
+| Region                | VM Configuration             | Base Quantity | Discounted Option | Monthly Base Cost | 
+|-----------------------|------------------------------|---------------|-------------------|-------------------|
+| South Carolina (East US) | General purpose, n2-standard v4 | 7 VMs        | 3-year           | $577.99           
+| Finland (North Europe) | General purpose, n2-standard v4 | 7 VMs        | 3-year           | $633.19           
+| Taiwan (East Asia)      | General purpose, n2-standard v4 | 6 VMs        | 3-year           | $556.08           
 
 ### 2.4.1 Cost of Global Load Balancer for API Backend
 Load Balancer scope: Global  
