@@ -1,4 +1,4 @@
-
+**Note** : All other associated screenshots have been uploaded to Screenshots folder for respective milestones.
 # Migration Outcome
 
 ## Issues Encountered
@@ -27,6 +27,7 @@ To resolve this issue, the following steps were taken:
 
 **Issue Encountered**:  
 During the prerequisites check phase of the Microsoft Azure Site Recovery (ASR) Unified Setup, a warning was triggered indicating that the VM's network configuration did not have a static IP address assigned. This warning could have impacted the migration and failover process.
+![alt text](<Screenshots/Others/Static ip address issue.png>)
 
 **Solution Implemented**:  
 To address this issue, a static IP address was manually assigned to the network settings:
@@ -37,6 +38,8 @@ To address this issue, a static IP address was manually assigned to the network 
 
 2. **Configured Static IP Address**:
    - Selected **Internet Protocol Version 4 (TCP/IPv4)** and set a static IP address that aligned with the existing network configuration.
+
+![alt text](<Screenshots/Others/Fixing static ip address.png>)
 ### 3. Issue with Microsoft Azure Site Recovery Unified Agent
 
 **Problem**:  
@@ -44,6 +47,8 @@ The default Microsoft Azure Site Recovery Unified Agent had issues configuring t
 
 **Solution**:  
 Manually searched for and installed an older version, **Microsoft ASR 9.24.1.0**, which successfully allowed configuration of the server details.
+
+![alt text](<Screenshots/Others/Microsoft ASR.png>)
 ### 4. Replication Process Detection Issue
 
 **Problem**:  
@@ -59,6 +64,8 @@ Replication started but proceeded very slowly. Additionally, an error about an o
 **Solution**:  
 Updated the agent version on the VM, which resolved the error and restored the ongoing replicated VM's health status to healthy.
 
+![alt text](<Screenshots/Milestone5 VM migration execution/23. Replication status.png>)
+
 ### 6. RDP Connection Issue After VM Migration
 
 **Problem**:  
@@ -67,6 +74,7 @@ After the VM was fully migrated, RDP failed to connect to the VM despite the RDP
 **Solution**:  
 Changed the VM's password and restarted the VM, which resolved the issue and allowed successful RDP connection.
 
+![alt text](<Screenshots/Issues/RDP connection issue.png>)
 ### Lessons Learned During the Migration Process
 
 1. **Administrator Password Configuration**:  

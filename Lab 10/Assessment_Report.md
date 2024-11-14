@@ -1,4 +1,4 @@
-
+**Note** : All other associated screenshots have been uploaded to Screenshots folder for respective milestones.
 # Assessment Report
 
 ## Summary of Findings
