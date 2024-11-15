@@ -3,8 +3,9 @@
 
 ## Workflow
 ```mermaid
+%%{init: {'themeVariables': {'graphMargin': '20', 'nodeSpacing': '30', 'rankSpacing': '30'}}}%%
 graph TD
-    A[Host Laptop] --> B[VM1 - Windows server 2019]
+    A[Host Laptop] --> B[VM1 - Windows Server 2019]
     A[Host Laptop] --> C[VM2 - Replication VM]
     B --> D[Mobility Agent Installed on VM1]
     D --> E[VM1 Replicated to Azure with Help of VM2]
