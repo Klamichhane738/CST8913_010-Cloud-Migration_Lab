@@ -1,6 +1,32 @@
 
 # Reflection on the Migration Process
 
+## Workflow
+```mermaid
+graph TD
+    A[Host Laptop] --> B[VM1 - Windows server 2019]
+    A[Host Laptop] --> C[VM2 - Replication VM]
+    B --> D[Mobility Agent Installed on VM1]
+    D --> E[VM1 Replicated to Azure with Help of VM2]
+    C --> F[Azure Migrate Server - Replication VM: Temporary system]
+    F --> G[Azure Cloud - Target VM]
+    E --> G[Azure Cloud - Migrated VM]
+    G --> H[Access Migrated VM via RDP]
+    H --> I[Successful Migration]
+    
+    B --> J[Assessment on VM1 Performed]
+    G --> K[Web Page Hosted on Migrated VM in Azure]
+    G --> M[Public IP Address Assigned to Migrated VM]
+    
+    classDef server fill:#f9f,stroke:#333,stroke-width:2px;
+    class A,B,C server;
+    classDef cloud fill:#bbf,stroke:#333,stroke-width:2px;
+    class E,F,G cloud;
+    classDef action fill:#bbf,stroke:#333,stroke-width:2px;
+    class J,K,L,M action;
+
+```
+
 ## Challenges During the Assessment Phase
 During the assessment phase, the validation process failed due to the lack of an administrator password set on the VM. This highlighted the importance of properly configuring credentials upfront, as setting a strong administrator password during initial VM deployment can prevent such validation roadblocks. Utilizing **Azure Migrate** proved effective in conducting a detailed initial assessment, providing a clear overview of the migration readiness and compatibility. However, the tool revealed gaps that required further adjustments, such as confirming infrastructure prerequisites and addressing network configurations.
 
