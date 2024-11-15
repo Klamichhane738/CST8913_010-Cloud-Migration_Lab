@@ -3,7 +3,7 @@
 
 ## Workflow
 ```mermaid
-%%{init: {'themeVariables': {'graphMargin': '20', 'nodeSpacing': '30', 'rankSpacing': '30'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': {'nodeSpacing': '20', 'rankSpacing': '20', 'fontSize': '12', 'graphMargin': '10'}}}%%
 graph TD
     A[Host Laptop] --> B[VM1 - Windows Server 2019]
     A[Host Laptop] --> C[VM2 - Replication VM]
@@ -15,7 +15,7 @@ graph TD
     G --> H[Access Migrated VM via RDP]
     H --> I[Successful Migration]
     
-    B --> J[Assessment on VM1]
+    B --> J[Assessment on VM1 Performed]
     G --> K[Web Page Hosted on Migrated VM in Azure]
     G --> M[Public IP Address Assigned to Migrated VM]
     
@@ -25,6 +25,7 @@ graph TD
     class E,F,G cloud;
     classDef action fill:#bbf,stroke:#333,stroke-width:2px;
     class J,K,L,M action;
+
 
 ```
 
