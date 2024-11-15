@@ -15,7 +15,7 @@ graph TD
     G --> H[Access Migrated VM via RDP]
     H --> I[Successful Migration]
     
-    B --> J[Assessment on VM1 Performed]
+    B --> J[Assessment on VM1]
     G --> K[Web Page Hosted on Migrated VM in Azure]
     G --> M[Public IP Address Assigned to Migrated VM]
     
